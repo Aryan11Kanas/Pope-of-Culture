@@ -1,29 +1,33 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+.yarn/install-state.gz
 
-# dependencies
-/node_modules
+# Testing
+/coverage
 
-# next.js
+# Next.js
 /.next/
 /out/
 
-# production
+# Production
 /build
+/dist
 
-# debug
+# Misc
+.DS_Store
+*.pem
+
+# Debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
 
-# env files
-.env*
-!.env.example
-
-# vercel
+# Vercel
 .vercel
 
-# typescript
+# Typescript
 *.tsbuildinfo
 next-env.d.ts
 
@@ -33,13 +37,95 @@ __pycache__/
 *$py.class
 *.so
 .Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+rec_env/
 venv/
+env/
 ENV/
+env.bak/
+venv.bak/
 
-# Temporary files
-temp/
+# PyCharm
+.idea/
 
-# Movie graphs
-movie/intensity_graphs/
+# VS Code
+.vscode/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Data files (large datasets)
+*.csv
+*.zip
+data/archive/
+data/archive.zip
+!data/processed/.gitkeep
+!data/raw/.gitkeep
+
+# Model files
+models/
+*.pkl
+*.pickle
+*.h5
+*.pb
+*.onnx
+
+# Cache files
+*.cache
 movie/intensity_cache.json
+intensity_cache.json
+
+# Generated graphs and images
+movie_graphs/
+intensity_graphs/
 public/movie_graphs/
+
+# Temp files
+temp/
+*.tmp
+*.temp
+
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk

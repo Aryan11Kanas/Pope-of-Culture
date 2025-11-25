@@ -1,7 +1,28 @@
 {
-  "name": "my-v0-project",
+  "name": "pope-of-culture",
   "version": "0.1.0",
+  "description": "A full-stack movie recommendation and sentiment analysis platform",
   "private": true,
+  "author": "Pope of Culture Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aryan11Kanas/Pope-of-Culture.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Aryan11Kanas/Pope-of-Culture/issues"
+  },
+  "homepage": "https://github.com/Aryan11Kanas/Pope-of-Culture#readme",
+  "keywords": [
+    "movie-recommendations",
+    "sentiment-analysis",
+    "machine-learning",
+    "nextjs",
+    "react",
+    "python",
+    "gemini-ai",
+    "collaborative-filtering"
+  ],
   "scripts": {
     "build": "next build",
     "dev": "next dev",

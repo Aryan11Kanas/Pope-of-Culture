@@ -139,13 +139,15 @@ export default function AnalysisPage() {
               <div>
                 <CardTitle>{movieData.title}</CardTitle>
                 <CardDescription>
-                  {movieData.release_date ? new Date(movieData.release_date).getFullYear() : 'N/A'} • {movieData.genres} • {movieData.original_language.toUpperCase()}
+                  {movieData.release_date ? new Date(movieData.release_date).getFullYear() : 'N/A'} • {movieData.genres || 'N/A'} • {movieData.original_language?.toUpperCase() || 'N/A'}
                 </CardDescription>
               </div>
               <div className="flex gap-2">
-                <Badge variant="secondary">
-                  ⭐ {movieData.vote_average.toFixed(1)}
-                </Badge>
+                {movieData.vote_average > 0 && (
+                  <Badge variant="secondary">
+                    ⭐ {movieData.vote_average.toFixed(1)}
+                  </Badge>
+                )}
                 {movieData.imdb_id && (
                   <Badge variant="outline">
                     🔗 IMDb
